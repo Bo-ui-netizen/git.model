@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 
-$projectRoot = 'D:\GeoROI-YOLO'
+$projectRoot = Resolve-Path (Join-Path $PSScriptRoot '..\..\..')
 $pythonExe = Join-Path $projectRoot '.venv\Scripts\python.exe'
 $yoloExe = Join-Path $projectRoot '.venv\Scripts\yolo.exe'
 $runsRoot = Join-Path $projectRoot 'runs\detect\runs'

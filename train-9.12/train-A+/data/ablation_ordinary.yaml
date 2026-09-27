@@ -1,4 +1,4 @@
-﻿path: D:\GeoROI-YOLO/obb_dataset_synth_ordinary
+﻿path: ../../../data-9.12/obb_dataset_synth_ordinary
 train: images/train
 val: images/val
 test: images/test

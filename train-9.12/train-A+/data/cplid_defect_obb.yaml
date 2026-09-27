@@ -1,5 +1,5 @@
 # 由 scripts/convert_yolo_boxes_to_obb.py 生成。
-path: D:/GeoROI-YOLO/obb_dataset
+path: ../../../data-9.12/obb_dataset
 train: images/train
 val: images/val
 test: images/test
