@@ -1,0 +1,9 @@
+﻿path: D:/A-learn/weichat/xwechat_files/wxid_qqa6ttn73nlc22_158f/msg/file/2026-07/CPLID_YOLO/CPLID_YOLO/full
+train: images/train
+val: images/val
+test: images/val
+
+names:
+  0: insulator
+  1: defect
+

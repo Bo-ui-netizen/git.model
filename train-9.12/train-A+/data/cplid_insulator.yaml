@@ -1,0 +1,7 @@
+path: ../datasets/CPLID_YOLO/insulator
+train: images/train
+val: images/val
+test: images/val
+
+names:
+  0: insulator

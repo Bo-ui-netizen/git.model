@@ -1,0 +1,11 @@
+project_name: Geo-ROI-YOLO
+dataset_root: datasets
+cplid_raw: datasets/InsulatorDataSet
+cplid_yolo: datasets/CPLID_YOLO
+cplid_roi: datasets/CPLID_ROI
+stage1_model: yolo11n.pt
+stage2_model: yolo11n-obb.pt
+roi_padding: 0.30
+roi_size: 768
+device: cpu
+seed: 42

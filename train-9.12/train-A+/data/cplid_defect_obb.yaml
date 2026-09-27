@@ -1,0 +1,8 @@
+# 由 scripts/convert_yolo_boxes_to_obb.py 生成。
+path: D:/GeoROI-YOLO/obb_dataset
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: defect

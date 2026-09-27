@@ -1,0 +1,54 @@
+# ===== Python / IDE =====
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+*.swp
+
+# ===== 系统 / 临时 =====
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+
+# ===== 巨型压缩包（7.97GB，不进 git）=====
+/.zip
+*.zip
+!*.gitignore
+
+# ===== 数据集本体（图片 + 标签，太大，单独备份）=====
+data-9.12/obb_dataset/images/
+data-9.12/obb_dataset/labels/
+data-9.12/obb_dataset_synth_constrained/
+data-9.12/obb_dataset_synth_ordinary/
+data-9.12/datasets/
+data-9.12/mask_review/
+data-9.12/empty_val_labels_backup_*/
+data-9.12/label_backup_*/
+data-9.12/codex_images/
+data-9.12/stage_preview/
+data-9.12/*.jpg
+backups/
+
+# ===== 重复的 runs（只保留 data-9.12/runs 作为主副本）=====
+train-9.12/train-A/runs/
+train-9.12/train-A+/runs/
+
+# ===== 缓存 / 临时 =====
+.cache/
+.cache_d/
+.torch_cache/
+.yolo_config/
+.tmp/
+.labelme_local/
+
+# ===== 日志 =====
+*.log
+*.err.log
+
+# ===== node 等无关 =====
+node_modules/

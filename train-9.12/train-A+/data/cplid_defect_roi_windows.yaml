@@ -1,0 +1,8 @@
+﻿path: D:/A-learn/weichat/xwechat_files/wxid_qqa6ttn73nlc22_158f/msg/file/2026-07/CPLID_ROI/CPLID_ROI
+train: images/train
+val: images/val
+test: images/val
+
+names:
+  0: defect
+
