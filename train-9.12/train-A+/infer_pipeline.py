@@ -49,7 +49,8 @@ def main():
     parser.add_argument("--out", default="outputs/infer")
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--padding", type=float, default=0.30)
-    parser.add_argument("--roi-size", type=int, default=768)
+    # Keep inference aligned with the high-resolution stage-2 training default.
+    parser.add_argument("--roi-size", type=int, default=1024)
     parser.add_argument("--conf1", type=float, default=0.25)
     parser.add_argument("--conf2", type=float, default=0.20)
     args = parser.parse_args()

@@ -11,7 +11,8 @@ def main():
     parser = argparse.ArgumentParser(description="Train stage-2 defect detector on ROI crops.")
     parser.add_argument("--model", default="yolo11n.pt")
     parser.add_argument("--data", default="data/cplid_defect_roi.yaml")
-    parser.add_argument("--imgsz", type=int, default=768)
+    # 1024 preserves more pixels for small defects; override with --imgsz if needed.
+    parser.add_argument("--imgsz", type=int, default=1024)
     parser.add_argument("--epochs", type=int, default=120)
     parser.add_argument("--batch", type=int, default=2)
     parser.add_argument("--device", default="0", help="GPU 编号，RTX 4060 通常为 0")

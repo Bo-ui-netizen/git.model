@@ -43,7 +43,7 @@ $stage2OutLog = Join-Path $logsRoot 'stage2_rtx4060.out.log'
 $stage2ErrLog = Join-Path $logsRoot 'stage2_rtx4060.err.log'
 $stage2 = Start-Process -FilePath $yoloExe -ArgumentList @(
     'detect', 'train', 'model=yolo11n.pt', 'data=data\cplid_defect_roi_windows.yaml',
-    'imgsz=768', 'epochs=120', 'batch=4', 'device=0', 'project=runs',
+    'imgsz=1024', 'epochs=120', 'batch=2', 'device=0', 'project=runs',
     'name=stage2_defect_roi_rtx4060', 'exist_ok=True', 'patience=30', 'close_mosaic=10'
 ) -WorkingDirectory $projectRoot -RedirectStandardOutput $stage2OutLog -RedirectStandardError $stage2ErrLog -WindowStyle Hidden -PassThru
 $stage2 | Wait-Process

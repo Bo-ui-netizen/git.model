@@ -33,7 +33,8 @@ def main():
     p.add_argument('--out', default='outputs/infer')
     p.add_argument('--device', default='0', help='GPU 编号；RTX 4060 通常为 0')
     p.add_argument('--padding', type=float, default=.30)
-    p.add_argument('--roi-size', type=int, default=768)
+    # Keep inference aligned with the high-resolution OBB training default.
+    p.add_argument('--roi-size', type=int, default=1024)
     p.add_argument('--conf1', type=float, default=.25)
     p.add_argument('--conf2', type=float, default=.20)
     a = p.parse_args()
